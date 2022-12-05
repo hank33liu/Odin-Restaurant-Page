@@ -1,3 +1,72 @@
-.hello {
-    color: red;
+/* CSS Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Italiana", Arial, Helvetica, sans-serif;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 2.5rem);
+}
+
+#header {
+    font-family: "Italianno";
+    font-size: 6rem;
+    padding-top: 2rem;
+    vertical-align: baseline;
+}
+
+#tab-group {
+    display: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    gap: 3rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.tab {
+    cursor: pointer;
+}
+
+#main {
+    align-items: center;
+    background-image: url(home.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    font-weight: bold;
+    justify-content: space-between; 
+}
+
+#about {
+    background-color: white;
+    margin: 2rem;
+    padding: 2rem;
+    width: clamp(500px, 50%, 800px);
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+#header,
+#tab-group,
+#footer {
+    background-color: beige;
+    text-align: center;
 }
