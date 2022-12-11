@@ -2,10 +2,15 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+    mode: 'development', //remove for production
     entry: {
-        main: './src/main.js',
+        main: './src/index.js',
         print: './src/print.js',
     },
+    devtool: 'inline-source-map', //remove for production
+    devServer: {
+        static: './dist',
+    }, //remove for production
     plugins: [
         new HtmlWebpackPlugin({
             title: `Mama Mia's!!!`,
@@ -23,5 +28,8 @@ module.exports = {
                 use: ['style-loader', 'css-loader'],
             },
         ],
+    },
+    optimization: {
+        runtimeChunk: 'single',
     },
 };

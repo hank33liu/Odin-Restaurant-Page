@@ -1,1 +1,1 @@
-console.log('Print is working!')
+console.log('print.js is working!')
