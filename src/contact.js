@@ -4,7 +4,7 @@ function component() {
     const contact = document.createElement('div');
 
     
-    contact.setHTML(`<div class="contact-header">Contact</div>
+    contact.innerHTML = `<div class="contact-header">Contact</div>
                     <div class="contact-section">
                         Phone Number: 1.800.MYPIZZA
                         <br>
@@ -15,7 +15,7 @@ function component() {
                         325 Pineapple Way
                         <br>
                         Turtleneck Top, Mariana 90210
-                    </div>`);
+                    </div>`;
     contact.id = 'contact';
 
     return contact;

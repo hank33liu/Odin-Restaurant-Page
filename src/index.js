@@ -53,7 +53,7 @@ function content() {
 
     const credits = document.createElement('div');
     credits.classList.add('credits');
-    credits.setHTML('Photo by &nbsp<a href="https://unsplash.com/@pablomerchanm" target="_blank" rel="noopener noreferrer">Pablo Merchán Montes</a>&nbsp on &nbsp<a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash</a>');
+    credits.innerHTML = 'Photo by &nbsp<a href="https://unsplash.com/@pablomerchanm" target="_blank" rel="noopener noreferrer">Pablo Merchán Montes</a>&nbsp on &nbsp<a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash</a>';
     main.appendChild(credits);
 
 

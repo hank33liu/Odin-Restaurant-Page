@@ -4,7 +4,7 @@ function component() {
     const menu = document.createElement('div');
 
     
-    menu.setHTML(`  <div class="menu-header">Starters</div>
+    menu.innerHTML = `  <div class="menu-header">Starters</div>
                     <div class="menu-section">
                         <div class="menu-item">Caesar Salad</div>
                         <div class="menu-item">Garlic Bread</div>
@@ -23,7 +23,7 @@ function component() {
                         <div class="menu-item">Gelato (vanilla, chocolate, strawberry)</div>
                         <div class="menu-item">Tiramisu</div>
                         <div class="menu-item">Cheesecake</div>
-                    </div>`);
+                    </div>`;
     menu.id = 'menu';
 
     return menu;
